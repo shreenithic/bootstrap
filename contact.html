@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="bootstrap.bundle.min.js"></script>
+    <style>
+        a:focus,
+        button:focus
+         {
+            outline: 2px solid #000 !important; 
+            outline-offset: 3px !important;
+        }
+    </style>
+</head>
+
+<body class="bg-light bg-gradient">
+    <div class="container-fluid position-relative">
+        <div class="row content overflow-x-hidden">
+            <div class="col-xxl-6 col-xl-8 col-lg-10 col-md-11 col-sm-12 bg-white m-auto" role="main"
+                aria-label="Contact Form Page">
+
+                <!-- Header -->
+                <header role="banner">
+                    <!-- Theme toggle -->
+                    <div class="d-flex justify-content-end m-3">
+                        <a class="text-body-tertiary m-2" aria-label="toggle theme" role="button" tabindex="0">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="#adb5bd"
+                                aria-hidden="true">
+                                <path
+                                    d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z">
+                                </path>
+                                <path class="cf0l8" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Profile -->
+                    <div class="row-col-12 text-center mb-5">
+                        <img src="./images/profile.jpg" class="rounded-circle mb-3" height="48" width="48"
+                            alt="Jordan Walker's Profile">
+                        <h1 class="fs-4 fw-bolder m-1" id="profile-name">Jordan Walker</h1>
+                        <p class="text-muted small mb-3">Frontend developer and community builder from NYC 🇺🇸</p>
+                    </div>
+                </header>
+
+                <!-- Contact Form -->
+                <div
+                    class="d-flex justify-content-center align-items-center col-7 m-auto mb-5 bg-light bg-gradient border border-2 rounded-4">
+                    <form class="m-4 mb-5 w-75" aria-labelledby="contact-form-title">
+                        <h4 class="text-center text-body-secondary m-3 mb-4" id="contact-form-title">Contact Us</h4>
+
+                        <fieldset>
+                            <legend class="visually-hidden">Contact form inputs</legend>
+
+
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="name" placeholder="Name"
+                                    aria-required="true" aria-label="Name">
+                                <label for="name">Name</label>
+                            </div>
+
+
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="Email"
+                                    aria-required="true" aria-label="Email">
+                                <label for="email">Email</label>
+                            </div>
+
+
+                            <div class="form-floating mb-2">
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number"
+                                    aria-label="Phone Number">
+                                <label for="phone">Phone No.</label>
+                            </div>
+
+
+                            <div class="form-group mb-2">
+                                <label for="interest" class="form-label visually-hidden">Select an interest</label>
+                                <select class="form-select" id="interest" aria-label="Select an interest">
+                                    <option value="" selected>Select an Interest</option>
+                                    <option value="inquiry">Inquiry</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Others</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-floating mb-4">
+                                <input type="textarea" class="form-control" placeholder="Leave a comment here"
+                                    id="message" style="height: 100px" aria-label="Comments">
+                                <label for="message">Comments</label>
+                            </div>
+
+
+                            <div class="text-center">
+                                <button type="submit" class="form-control btn btn-dark rounded-pill" id="submit"
+                                    aria-label="Submit form">Submit</button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Footer -->
+                <footer role="contentinfo">
+
+                    <!-- Redirect to Home -->
+                    <section class="d-flex mb-4">
+                        <a href="index.html" class="btn btn-small border-secondary rounded-pill m-auto py-1"
+                            aria-label="Go to Home" type="button" tabindex="0">
+                            <small>Go to Home</small>
+                        </a>
+                    </section>
+
+                    <!-- Copyright -->
+                    <section class="d-flex">
+                        <p class="small text-body-tertiary m-auto mb-5">&copy; Jordan Walker. All rights reserved</p>
+                    </section>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
